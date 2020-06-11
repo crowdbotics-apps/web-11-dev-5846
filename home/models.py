@@ -36,10 +36,20 @@ class HomePage(models.Model):
 class Hghghgh(models.Model):
     "Generated Model"
     fgasdg = models.BigIntegerField()
-    jhgskajgsdkjfga = models.ForeignKey(
+    dfgsfs = models.OneToOneField(
+        "users.User",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="hghghgh_dfgsfs",
+    )
+    dfssdgsdf = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
         null=True,
         blank=True,
-        related_name="hghghgh_jhgskajgsdkjfga",
+        related_name="hghghgh_dfssdgsdf",
+    )
+    sfdgsdfg = models.ManyToManyField(
+        "home.Hghghgh", blank=True, related_name="hghghgh_sfdgsdfg",
     )
