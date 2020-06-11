@@ -36,3 +36,10 @@ class HomePage(models.Model):
 class Hghghgh(models.Model):
     "Generated Model"
     fgasdg = models.BigIntegerField()
+    jhgskajgsdkjfga = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="hghghgh_jhgskajgsdkjfga",
+    )
